@@ -1,24 +1,16 @@
-# README
+# Rails Docker Image
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Build docker image for Rails application.
 
-Things you may want to cover:
+## Build Image
+To build image run this command (__change the tag name with your preferred tag name__).
 
-* Ruby version
+`$ docker build . -t myorganization/myimage:1.0.0`
 
-* System dependencies
+## Running a Container from Image
 
-* Configuration
+To create a container from the image, run this command (__change the tag name with your preferred tag name__).
 
-* Database creation
+`$ docker run -d -p 3000:3000 --name django-app myorganization/myimage:1.0.0`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then you can access the app from the browser with this url: `http:127.0.0.1:3000`
