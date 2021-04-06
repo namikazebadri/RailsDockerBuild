@@ -3,13 +3,13 @@
 Build docker image for Rails application.
 
 ## Build Image
-To build image run this command (__change the tag name with your preferred tag name__).
+To build image run this command (__change the tag name & version with your preferred tag name & version__).
 
 `$ docker build . -t myorganization/myimage:1.0.0`
 
 ## Running a Container from Image
 
-To create a container from the image, run this command (__change the tag name with your preferred tag name__).
+To create a container from the image, run this command (__change the tag name & version with your preferred tag name & version__).
 
 `$ docker run -d -p 3000:3000 --name rails-app myorganization/myimage:1.0.0`
 
